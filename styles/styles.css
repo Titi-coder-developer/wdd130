@@ -1,7 +1,13 @@
+nav{
+    background-color: steelblue;
+    padding: auto;
+}
+
 nav a{
     color: white;
     padding: 10px;
     display: block;
+
 }
 
 h1 {
