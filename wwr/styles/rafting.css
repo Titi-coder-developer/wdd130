@@ -68,8 +68,7 @@ nav, p, section, article {
     position: relative;
 }
 
-.hero img {
-    display: block;
+.hero img { 
     width: 100%;
     height: auto;
 }
