@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us–White Water Rafting Company</title>
     <meta name="description"
         content="Get in touch with White Water Rafting. Contact us for general inquiries, reservation questions, or website suggestions. ">
     <meta name="author" content="Chinweokwu Clementina Adindu">
-    <title>Contact - Us–White Water Rafting Company</title>
-    <link rel="stylesheet" href="styles/contact-us.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
@@ -58,22 +58,28 @@
 
                 <div class="radio-group">
                     <legend>Purpose of Message:</legend>
-                    <label><input type="radio" name="purpose" value="general"> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+                    <label for="general"><input type="radio" id="general" name="purpose" value="general"> General
+                        Inquiry</label>
+                    <label for="reservation"><input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation
+                        Question</label>
+                    <label for="suggestion"><input type="radio" id="suggestion" name="purpose" value="website"> Website
+                        Suggestion</label>
                 </div>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required placeholder="Type here"></textarea>
 
-                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+                <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to
+                    the monthly
+                    newsletter</label>
 
                 <button type="submit">Get in Touch!</button>
             </form>
         </section>
 
         <!-- Employee Profiles Section-->
-        <section class="employeeS">
+        <section class="employee">
             <h2>We are to serve you</h2>
             <div class="profiles">
                 <figure class="employee">
