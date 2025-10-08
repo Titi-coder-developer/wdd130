@@ -105,7 +105,7 @@ footer {
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-label {
+label, legend{
   font-weight: bold;
   display: block;
   margin-top: 10px;
@@ -122,6 +122,7 @@ input[type="text"], input[type="email"], textarea {
 textarea {
   height: 80px;
 }
+
 
 button {
   width: 100%;
