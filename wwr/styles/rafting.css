@@ -1,5 +1,5 @@
 /* ==========================================
-    CONTACT PAGE STYLES
+     PAGE STYLES
 ===========================================*/
 
 
@@ -75,7 +75,204 @@ footer {
     margin: 0 auto;
 }
 
-/* Contact Info Section */
+/* ===== HOME PAGE (Grid Layout) ===== */
+.home-grid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 2rem;
+  padding: .3rem;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  text-shadow: 2px 2px 6px#000000;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.cta-btn:hover {
+  background-color: var(--accent1-color);
+}
+
+/* ABOUT US */
+/* hero title (overlay) */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--accent1-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+
+}
+
+
+/* ===== MISSION ARTICLE (overlay without floats) ===== */
+.hero article {
+    position: absolute;
+    top: 27%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 12px;
+    border-radius: 8px;
+    min-width: 300px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* image inside mission article */
+.hero article img {
+    float: right;
+    width: 120px;
+    height: auto;
+    margin-left: 10px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* text inside mission article */
+.hero article p {
+    color: var(--accent1-color);
+    font-size: 0.95rem;
+}
+
+/* === SECTIONS === */
+.section {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin: 1.25rem auto;
+    max-width: var(--max-width);
+}
+
+/* ===== ADVENTURE GALLERY (FLEX) ===== */
+.adventure-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+
+.adventure-gallery figure {
+    flex: 1 1 calc(20% - 1rem);
+}
+
+
+/* NEWSLETTER */
+.newsletter {
+  text-align: center;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  width: 90%;
+  margin: auto;
+}
+
+/* ===== TRIPS PAGE ===== */
+.trips-grid {
+  text-align: center;
+  padding: .3rem;
+}
+.trips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.trip {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+.trip img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.trip-cta{
+  margin-top: 2rem;
+  padding: 2rem;
+  color: black;
+  border-radius: 8px;
+}
+
+/* Overall form container */
+.contact-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  color: #023e8a;
+  border: 2px solid #90e0ef;
+}
+
+/* Labels */
+.contact-form, label, legend{
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  
+}
+
+
+/* Text inputs */
+.contact-form input[type="text"],
+.contact-form input[type="email"], textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #90e0ef;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus{
+    border-color: var(--accent1-color);
+    outline: none;
+    box-shadow: 0 0 4px #0077b6;
+}
+
+
+/* ===== Contact Info Section ===== */
 .contact-info {
     text-align: center;
     margin: 30px 0;
@@ -97,33 +294,10 @@ footer {
   border-radius: 10px;
 }
 
-.contact-form {
-  width: 320px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-
-label, legend{
-  font-weight: bold;
-  display: block;
-  margin-top: 10px;
-}
-
-input[type="text"], input[type="email"], textarea {
-  width: 100%;
-  padding: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  margin-top: 5px;
-}
-
 textarea {
   height: 80px;
+
 }
-
-
 button {
   width: 100%;
   padding: 10px;
@@ -172,7 +346,7 @@ button:hover {
   font-weight: bold;
 }
 
- h2 {
+h2 {
     font-family: var(--heading-font);
     color: #fff;
     background-color: var(--accent1-color);
